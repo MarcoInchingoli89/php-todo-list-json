@@ -1,7 +1,6 @@
 <?php
 //Dobbiamo creare una web-app che permetta di leggere e scrivere una lista di Todo. Deve essere anche gestita la persistenza dei dati leggendoli da, e scrivendoli in un file JSON.
 
-
 ?>
 
 
@@ -24,8 +23,8 @@
         <div class="container">
             <div class="add_task">
                 <h3 class="my-4 text-primary">ToDo</h3>
-                <input type="text">
-                <button class="mx-2">Aggiungi</button>
+                <input v-model="new_task" type="text">
+                <button @click="addTask" class="mx-2">Aggiungi</button>
             </div>
             <div class="task_list py-3">
                 <ul>
