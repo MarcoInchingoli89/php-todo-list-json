@@ -21,7 +21,18 @@
 
 
     <div id="app">
-
+        <div class="container">
+            <div class="add_task">
+                <h3 class="my-4 text-primary">ToDo</h3>
+                <input type="text">
+                <button class="mx-2">Aggiungi</button>
+            </div>
+            <div class="task_list py-3">
+                <ul>
+                    <li v-for="(task, i) in tasks">{{task}}</li>
+                </ul>
+            </div>
+        </div>
     </div>
 
 
