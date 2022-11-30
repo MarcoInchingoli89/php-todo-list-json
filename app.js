@@ -4,7 +4,7 @@ createApp({
     data() {
         return {
             tasks: [],
-            upi_url: 'server.php',
+            api_url: 'server.php',
         }
     },
     methods: {
@@ -14,6 +14,8 @@ createApp({
                 .then(response => {
                     console.log(url);
                     console.log(response);
+                    this.tasks = response.data;
+                    console.log(this.tasks);
                 })
         }
     },
