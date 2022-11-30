@@ -19,12 +19,12 @@ createApp({
                     console.log(this.tasks);
                 })
         },
-        addTask() {
-            console.log('Ho aggiunto una task');
-            console.log(this.new_task);
-            this.tasks.unshift(this.new_task);
-            this.new_task = '';
-        }
+        /*  addTask() {
+             console.log('Ho aggiunto una task');
+             console.log(this.new_task);
+             this.tasks.unshift(this.new_task);
+             this.new_task = '';
+         } */
     },
     mounted() {
         this.readTasks(this.api_url);
